@@ -3,14 +3,17 @@ name: CI
 on: push
 
 jobs:
-  myjob:
-	  runs-on: ubuntu-latest
-		steps:
-      - name: step1
-	      run: curl -0 https://www.digitalocean.com/robots.txt 
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List all stuffs
+        run: ls -l
 
-      - name: step2
-	      run: ls -l
-	    
-			- name: step3
-	      run: cat robots.txt 
+      - name: download robots.txt
+        run: curl -O https://www.digitalocean.com/robots.txt
+
+      - name: List stuffs again
+        run: ls -a
+
+      - name: Print the text file
+        run: cat robots.txt

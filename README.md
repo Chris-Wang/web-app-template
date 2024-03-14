@@ -2,6 +2,8 @@
 
 Simple web app template written with Golang + Bootstrap 4
 
+Test sample
+
 ## Usage
 
 Install [Golang](https://golang.org/)  

@@ -1,0 +1,14 @@
+name: CI
+
+on: push
+
+jobs:
+  myjob:
+	  runs-on: ubuntu-lastest
+		steps:
+      - name: step1
+	      run: curl -0 https://www.digitalocean.com/robots.txt -output robots.txt
+      - name: step2
+	      run: ls -l
+	    - name: step3
+	      run: cat robots.txt 

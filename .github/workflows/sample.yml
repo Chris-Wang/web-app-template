@@ -8,7 +8,9 @@ jobs:
 		steps:
       - name: step1
 	      run: curl -0 https://www.digitalocean.com/robots.txt 
+
       - name: step2
 	      run: ls -l
-	    - name: step3
+	    
+			- name: step3
 	      run: cat robots.txt 
